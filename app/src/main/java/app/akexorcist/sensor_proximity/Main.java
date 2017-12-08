@@ -19,6 +19,7 @@ public class Main extends Activity {
 		setContentView(R.layout.main);
  
 		sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+		//lâý đôí tương bằng cách gọi phương thức getDefaultSensor() của lớp SensorManager.
 		sensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
 		
 		textProximity = (TextView) findViewById(R.id.textProximity);
@@ -37,7 +38,7 @@ public class Main extends Activity {
 
 	public SensorEventListener proxiListener = new SensorEventListener() {
 		public void onAccuracyChanged(Sensor sensor, int acc) { }
- 
+ 	//Một khi cảm biến được khai báo,đăng ký nghe của nó và ghi đè lên hai phương pháp được onAccuracyChanged và onSensorChanged
 		public void onSensorChanged(SensorEvent event) {
 			float proximity = event.values[0];
 			textProximity.setText("Proximity : " + (int)proximity);

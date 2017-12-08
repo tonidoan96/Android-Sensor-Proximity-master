@@ -1,4 +1,4 @@
-#Fri Dec 08 12:08:24 ICT 2017
-base.0=C\:\\Learning\\NHOM_2\\Android-Sensor-Proximity-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+#Fri Dec 08 14:06:32 ICT 2017
+base.0=C\:\\Learning\\BAI TAP THUC HANH 3\\Android-Sensor-Proximity-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
 path.0=classes.dex
 renamed.0=classes.dex
